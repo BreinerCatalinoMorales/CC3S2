@@ -1,4 +1,3 @@
-import java.lang.*;
 interface Climb {
     boolean isTooHigh(int height, int limit);
 }
