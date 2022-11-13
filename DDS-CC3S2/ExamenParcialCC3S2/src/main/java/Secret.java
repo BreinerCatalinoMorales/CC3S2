@@ -1,12 +1,9 @@
-import java.util.function.Predicate;
+import java.util.function.Consumer;
 interface Secret {
-    String magic(double d);
+    void magic(double d);
 }
 class Secret1 implements Secret {
-    public String magic(double d) {
-        d=1;
-        Predicate<Double> pred= s -> s<10;
-        String result=pred.test(d)?"poof":"";
-        return result;
+    public void magic(double d) {
+        Consumer<String> lambda = s ->System.out.println("poof");
     }
 }
