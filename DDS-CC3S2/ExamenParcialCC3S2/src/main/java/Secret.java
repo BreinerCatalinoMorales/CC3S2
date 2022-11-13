@@ -1,9 +1,11 @@
-import java.util.function.Consumer;
+import java.util.function.Supplier;
 interface Secret {
     void magic(double d);
 }
 class Secret1 implements Secret {
+    String str="poof";
     public void magic(double d) {
-        Consumer<String> lambda = s ->System.out.println("poof");
+        Supplier<String> lambda = () -> str;
+        System.out.println(lambda.get());
     }
 }
