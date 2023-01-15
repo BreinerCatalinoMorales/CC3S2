@@ -86,3 +86,36 @@
 
     En general, es importante tener un sistema de monitoreo y análisis de registros en marcha para poder detectar problemas en los microservicios y buscar fácilmente los mensajes
 
+# Parte 2
+  ## 1) Ejecuta CouchDB como un contenedor de Docker y publica su puerto
+  - Importamos el docker CouchDB
+  
+  ![PullCouchDB](https://user-images.githubusercontent.com/114892939/212558244-774c96ab-a99a-41dd-8893-7d17bb7fc8c7.png)
+  - Corremos la imagen
+  
+  ![run_couchDB](https://user-images.githubusercontent.com/114892939/212558243-4bb8ce35-1a27-4a8c-ba90-9ed2d47b9cae.png)
+  - Mostramos el Puerto
+  
+  ![run_port_CouchDB](https://user-images.githubusercontent.com/114892939/212558242-1f9c9741-05ce-42b0-9051-3de899a050c1.png)
+  
+  ## 2)Crea una imagen de Docker con un servicio REST, respondiendo Hola Amigos CC-3S2 a localhost:8080/hola. Utiliza el lenguaje y el framework que prefieras:
+  - Creamo la aplicacion de servicio web
+  ![Creamos_la_aplicaion](https://user-images.githubusercontent.com/114892939/212558619-9db4953b-087f-49bc-bc64-7e9540d86fa2.png)
+  
+  - Creamos el Dockerfile
+  ![Creamos_el_dockerfile](https://user-images.githubusercontent.com/114892939/212558628-e2965d89-db1d-4b13-833e-60855de4bc1d.png)
+
+  - Construimos la imagen
+  ![Construimos_la_Imagen](https://user-images.githubusercontent.com/114892939/212558650-83602c1a-bdc8-43d4-8578-8ae890dcbe15.png)
+  ![parte2_imagen](https://user-images.githubusercontent.com/114892939/212558683-9212d2e0-a0ef-4344-886b-1cf4b5087188.png)
+
+
+
+  - Ejecutamos el contenedor
+  ![Puerto](https://user-images.githubusercontent.com/114892939/212558666-e443d425-da9a-4bc0-b62a-0cd36df9f02f.png)
+
+  - Verficamos
+  ![ejecucion_exitosa](https://user-images.githubusercontent.com/114892939/212558676-27284004-3a60-4ae2-84fb-04ba38a1574b.png)
+
+  
+
