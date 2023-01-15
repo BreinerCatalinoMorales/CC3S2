@@ -65,3 +65,24 @@
     - Se puede utilizar herramientas de monitoreo para detectar problemas en tiempo real, buscando el trace-id específico relacionado con el problema informado por los usuarios finales. Estas herramientas pueden alertar automáticamente si se detectan patrones de errores o anomalías en los registros de eventos.
     
     Al utilizar el trace-id, se puede rastrear una transacción o solicitud a través de varias instancias de microservicios, lo que permite identificar rápidamente la instancia de microservicio responsable del problema.
+    
+# Pregunta6
+  - Si los usuarios finales comienzan a presentar casos de soporte con respecto a una falla específica,¿cómo podemos identificar el microservicio que causó el problema, es decir, la causa raíz?
+ 
+    Los metodos que mencioné en la pregunta anterior para detectar problemas en las instancias de microservicios, como el análisis de registros, el monitoreo en tiempo real y las pruebas automatizadas, también se pueden utilizar para identificar el microservicio específico que causó un problema específico.
+  Por ejemplo, al utilizar herramientas de análisis de registros puede buscar patrones de errores o anomalías en los registros de eventos relacionado con un trace-id específico, lo que permite identificar el microservicio específico que causó el problema. O con un sistema de monitoreo y alertas, puede detectar problemas en tiempo real y recibir alertas automáticamente cuando se detecta un problema en un microservicio específico.
+
+  - Si un caso de soporte menciona problemas relacionados con una entidad específica, por ejemplo, un número de pedido específico,¿cómo podemos encontrar mensajes de registro relacionados con el procesamiento de este pedido específico, por ejemplo, mensajes logs de todos los microservicios que estuvieron involucrados en su procesamiento?
+  
+    Para encontrar mensajes de registro relacionados con el procesamiento de un número de pedido específico, se pueden utilizar un sistema de trazabilidad, utilizar un sistema de trazabilidad que asocie un identificador único, como el número de pedido, con todas las solicitudes y mensajes relacionados con ese pedido. Esto permite rastrear fácilmente las solicitudes y mensajes que fluyen entre los microservicios mientras se procesa ese pedido específico, y encontrar los mensajes de registro relacionados con el procesamiento de ese pedido específico.
+
+  - Si los usuarios finales comienzan a presentar casos de soporte relacionados con un tiempo de respuesta inaceptablemente largo,¿cómo podemos identificar qué microservicio en una cadena de llamadas está causando la demora?
+  
+    Para identificar qué microservicio en una cadena de llamadas está causando un tiempo de respuesta inaceptablemente largo, se pueden utilizar algunos de los metodos mencionados anteriormente como:
+
+    - Utilizar un sistema de trazabilidad: Utilizar un sistema de trazabilidad que permita rastrear las solicitudes y mensajes que fluyen entre los microservicios mientras se procesa una solicitud externa. Esto permite identificar fácilmente cuál de los microservicios está tomando más tiempo en procesar las solicitudes y causando un tiempo de respuesta inaceptablemente largo.
+    - Utilizar una herramienta de monitoreo: Utilizar una herramienta de monitoreo que permita medir el rendimiento de cada microservicio en tiempo real. Esto permite identificar cuál de los microservicios está causando un cuello de botella y causando un tiempo de respuesta inaceptablemente largo.
+    - Utilizar una herramienta de análisis de registros: Utilizar una herramienta de análisis de registros para buscar patrones de rendimiento y errores en los registros de los microservicios. Esto permite identificar cuál de los microservicios está causando problemas y causando un tiempo de respuesta inaceptablemente largo.
+
+    En general, es importante tener un sistema de monitoreo y análisis de registros en marcha para poder detectar problemas en los microservicios y buscar fácilmente los mensajes
+
