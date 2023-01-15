@@ -130,4 +130,17 @@
   - Crea la imagen del agente.
   ![imagen_del_agente](https://user-images.githubusercontent.com/114892939/212559324-47340104-40c8-411a-8ac7-c0281c040884.png)
 
+  ## 4)Crea un pipeline que ejecuta un script de Ruby que imprima Hola Mundo desde Ruby:
+  - Crea un nuevo pipeline
+  ![pipeline](https://user-images.githubusercontent.com/114892939/212560271-c01665c7-8c22-4a31-8eed-20e4af0b11b4.png)
+
+  - Utiliza el siguiente comando de shell para crear el script hola.rb sobre la marcha: sh "echo \"puts 'Hola Mundo en Ruby'\" > hola.rb"
+  ![script1](https://user-images.githubusercontent.com/114892939/212560277-39f78cfc-70e4-496a-bc8f-d525233ecd33.png)
+
+  - AgrEjecuta la construcción y observa la salida de la consola.egue el comando para ejecutar hola.rb , utilizando el intérprete de Ruby.
+  ![script](https://user-images.githubusercontent.com/114892939/212560285-cadee147-4c41-424a-b1a2-d627abc03535.png)
+
+  - Ejecuta la construcción y observa la salida de la consola.
+  ![consola](https://user-images.githubusercontent.com/114892939/212560290-08c54bd6-4bde-4099-bf81-2c89e9a8fed4.png)
+
 
