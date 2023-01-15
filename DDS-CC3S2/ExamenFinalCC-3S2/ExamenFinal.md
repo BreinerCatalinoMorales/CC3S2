@@ -116,6 +116,18 @@
 
   - Verficamos
   ![ejecucion_exitosa](https://user-images.githubusercontent.com/114892939/212558676-27284004-3a60-4ae2-84fb-04ba38a1574b.png)
-
   
+  ## 3)Crea un master de Jenkins y imágenes de agentes Docker y úsalos para ejecutar una infraestructura de Jenkins capaz de crear proyectos de Ruby:
+  - Crea el Dockerfile del master de Jenkins, que instala automáticamente el complemento de Docker.
+  ![Dockerfile](https://user-images.githubusercontent.com/114892939/212559283-fc38ccf5-ac55-4733-8acc-e6847ec410e3.png)
+
+  - Crea la imagen master y ejecuta la instancia de Jenkins.
+  ![imagen_master_y_ejecucion](https://user-images.githubusercontent.com/114892939/212559300-70c92bd3-1153-4131-bf7d-6edec607289e.png)
+
+  - Crea el Dockerfile del agente (adecuado para el aprovisionamiento dinámico del agente), que instala el intérprete de Ruby.
+  ![dockerfile_agente](https://user-images.githubusercontent.com/114892939/212559309-1e3e6075-2205-4921-8016-aa54dd916990.png)
+
+  - Crea la imagen del agente.
+  ![imagen_del_agente](https://user-images.githubusercontent.com/114892939/212559324-47340104-40c8-411a-8ac7-c0281c040884.png)
+
 
