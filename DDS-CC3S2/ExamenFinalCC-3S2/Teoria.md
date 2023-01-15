@@ -38,3 +38,30 @@
       - Utilizar un sistema de configuración estático: Si se utiliza un sistema de configuración estático, como archivos de configuración en disco, se puede utilizar una herramienta de automatización, como Ansible o Puppet, para actualizar la configuración en todas las instancias del servicio.
 
       - Utilizar un sistema de orquestación: Si se utiliza un sistema de orquestación como Kubernetes, se puede utilizar la funcionalidad de actualización en caliente para actualizar la configuración en todas las instancias del servicio.
+
+# Pregunta5
+  - ¿Cómo se obtiene una descripción general de lo que sucede en el entorno del sistema cuando cada instancia de microservicio escribe en su propio archivo log local?
+  
+    Primero definamos los logs, los logs son registros de eventos generados por un sistema, aplicación o servicio. Estos registros pueden incluir información sobre transacciones, errores, advertencias, rendimiento, etc. Los logs son una herramienta valiosa para entender lo que sucede en un sistema, ya que proporcionan una visión detallada de las actividades que ocurren en un momento dado.
+
+    Entonces, en una arquitectura de microservicios, donde se tiene una gran cantidad de instancias de servicios desplegadas en diferentes servidores, como se menciono en la pregunta anterior es recomendable tener un sistema de registro centralizado para recolectar, almacenar y analizar los registros de eventos de todas las instancias de los microservicios. Esto permite obtener una descripción general de lo que sucede en el entorno del sistema y ayuda a detectar problemas, aumentar la capacidad de depuración y tomar decisiones para mejorar el rendimiento del sistema.
+
+  - ¿Cómo averiguo si alguna de las instancias de microservicio tiene problemas y comienza a escribir mensajes de error en sus archivos logs?
+  
+    Para detectar problemas en una instancia de microservicio que puedan estar causando mensajes de error en los archivos de registro, se pueden usar algunos metodos como: 
+
+    - Análisis de registros: Utilizar herramientas de análisis de registros como Lasticsearch o Logstash, para buscar patrones de errores o anomalías en los registros de eventos. Esto puede ayudar a detectar problemas en una instancia de microservicio específica.
+
+    - Monitoreo en tiempo real: Utilizar herramientas de monitoreo en tiempo real como Prometheus o Grafana, para detectar problemas en tiempo real. Estas herramientas pueden alertar automáticamente si se detectan patrones de errores o anomalías en los registros de eventos.
+
+    - Pruebas automatizadas: Utilizar pruebas automatizadas para detectar problemas en las instancias de microservicios. Estas pruebas pueden ejecutarse de forma continua para detectar problemas de forma temprana, con herramientas como Selenium, Appium o JUnit.
+
+  - Si los usuarios finales comienzan a informar problemas,¿cómo puedo encontrar mensajes logs relacionados? es decir,¿cómo puedo identificar qué instancia de microservicio es la causa raíz del problema?
+
+    Para encontrar mensajes de registro relacionados con problemas informados por los usuarios finales, se puede utilizar un enfoque basado en el trace-id. El trace-id es un identificador único que se utiliza para rastrear una transacción o una solicitud a través de varias instancias de microservicios.
+
+    - Se puede utilizar herramientas de análisis de registros para buscar patrones de errores o anomalías en los registros de eventos que contengan el trace-id específico relacionado con el problema informado por los usuarios finales. Esto puede ayudar a identificar qué instancia de microservicio está causando el problema.
+    - Se puede utilizar herramientas de búsqueda de registros para buscar el trace-id específico relacionado con el problema informado por los usuarios finales. Esto puede ayudar a encontrar mensajes de registro específicos relacionados con el problema.
+    - Se puede utilizar herramientas de monitoreo para detectar problemas en tiempo real, buscando el trace-id específico relacionado con el problema informado por los usuarios finales. Estas herramientas pueden alertar automáticamente si se detectan patrones de errores o anomalías en los registros de eventos.
+    
+    Al utilizar el trace-id, se puede rastrear una transacción o solicitud a través de varias instancias de microservicios, lo que permite identificar rápidamente la instancia de microservicio responsable del problema.
