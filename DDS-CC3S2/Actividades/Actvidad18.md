@@ -31,6 +31,19 @@
       
       Creamos el contenedor apartir de la imagen
       ![Screenshot from 2023-01-15 14-46-28](https://user-images.githubusercontent.com/114892939/212563612-b065bc11-8c53-435e-ae6a-3b487b0a07c2.png)
+      
+   - Dockerfile
+     Crea un nuevo directorio y un archivo llamado Dockerfile con el siguiente contenido:
+     ![Screenshot from 2023-01-15 14-49-10](https://user-images.githubusercontent.com/114892939/212563758-037bae83-f681-400f-8308-9b4c40b3175a.png)
+      
+     Ejecuta el siguiente comando para crear una imagen ubuntu_con_python: 3. Verifica que la imagen se haya creado ejecutando el siguiente comando:
+     ![Screenshot from 2023-01-15 14-50-58](https://user-images.githubusercontent.com/114892939/212563796-7ab1f56b-b756-4f48-b0c6-94df7b72793f.png)
+     
+     Comprueba que la imagen se creó ejecutando el siguiente comando:
+     ![Screenshot from 2023-01-15 14-52-47](https://user-images.githubusercontent.com/114892939/212563871-ba1d2ca3-8aae-44ac-bd61-ec5fd75370ae.png)
+      
+      
+
 
       
       
